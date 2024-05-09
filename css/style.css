@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.kartochka {
+    background-color: rgb(138, 137, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+    transition: transform 0.3s;
+    height: 200px;
+    width: 200px;
+}
+
+.kartochka.flipped {
+    background-color: #fff;
+}
+
+.kartochka .symbol {
+    visibility: hidden;
+}
+
+.kartochka.flipped .symbol {
+    visibility: visible;
+}
+
+@media (max-width:849px) {
+    .kartochka{
+    font-size: 15px;
+    height: 190px;
+    width: 190px;
+    }
+}
+
+@media (max-width:814px) {
+    .kartochka{
+    font-size: 15px;
+    height: 160px;
+    width: 160px;
+    }
+}
+@media (max-width:814px) {
+    .kartochka{
+    font-size: 15px;
+    height: 160px;
+    width: 160px;
+    }
+}
